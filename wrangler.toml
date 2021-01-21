@@ -1,0 +1,10 @@
+name = "worker-name"
+type = "webpack"
+account_id = "xxxxxxx"
+workers_dev = false
+route = "your.app/*"
+zone_id = "xxxxxx"
+
+kv_namespaces = [
+  { binding = "NameSpaceName", id = "xxxxxxx" }
+]

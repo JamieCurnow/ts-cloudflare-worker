@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "guardline-auth-worker",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "dist/index.js",
+  "author": "Jamie Curnow <jamie@the.plausible.company>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "yarn build && wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "~0.0.11",
+    "micromatch": "^4.0.2",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.1.0",
+    "@types/micromatch": "^4.0.1",
+    "@types/node-fetch": "^2.5.8",
+    "@types/service_worker_api": "^0.0.9",
+    "typescript": "^4.1.3"
+  }
+}
